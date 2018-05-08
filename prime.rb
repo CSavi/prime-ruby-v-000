@@ -1,17 +1,10 @@
 
 
-def prime?(n)
-  i = 2
-  if n == 2 
-    return true 
-  end 
-  while i < n 
-    if n % i == 0 
-    return false 
-  i = i + 1 
-  end 
+def prime(n)
+  (2..n/2).none?{|i| n % i == 0}
+end
 
-end 
+
   
   
   
